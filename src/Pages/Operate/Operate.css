@@ -1,0 +1,202 @@
+.operate-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-size: cover;
+  background: url('../../Assets/images/MapBackground.png') no-repeat center center;
+  background-position: center top;
+}
+
+.user-location-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  background: url('../../Assets/images/userlocationicon.png') no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+}
+
+.operate-banner {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 20%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgba(223, 223, 223, 0.9);
+  
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* 추가: 내부 요소가 넘치면 다음 줄로 배치 */
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.operate-banner .cart-info {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100%; /* 추가: cart-info가 첫 번째 줄 전체를 차지 */
+}
+
+.operate-banner .cart-info img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.operate-banner .cart-info .cart-details {
+  display: block;
+  
+}
+
+.time{
+  font-weight: bold;
+  color: rgb(156, 116, 61);
+}
+
+.operate-banner .cart-info .cart-details .cart-number {
+  font-weight: bold;
+  display: block;
+  margin: 3%;
+  margin-top: 6%;
+}
+
+.operate-banner .cart-info .cart-details .cart-status {
+  color: green;
+  font-size: small;
+  font-weight: bold;
+  background-color: rgb(242, 241, 235);
+  border-radius: 25px;
+  display: inline-block;
+  padding: 3% 6%;
+  margin: 3%;
+}
+
+.cart-status{
+  border : 10px;
+  background-color: rgba(223, 223, 223, 0.945);
+}
+
+.operate-banner .controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 100%; /* 추가: controls가 두 번째 줄 전체를 차지 */
+  margin-top: 10px; /* 추가: 첫 번째 줄과 간격 추가 */
+}
+
+.operate-banner .controls .time {
+  margin-bottom: 10px;
+}
+
+.operate-banner .controls .operate-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* 추가: 버튼들이 배너를 넘지 않도록 */
+  justify-content: center; /* 추가: 버튼들이 가운데 정렬되도록 */
+  margin-bottom: 6%;
+}
+
+.operate-banner .controls .operate-buttons button {
+  padding: 15px 50px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  flex: 1 1 auto; /* 추가: 버튼들이 자동으로 크기를 조정 */
+  max-width: 100%; /* 추가: 버튼의 최대 너비 설정 */
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+
+.operate-banner .controls .operate-buttons .start-button {
+  background-color: orange;
+  color: black;
+}
+
+.operate-banner .controls .operate-buttons .stop-button {
+  background-color: rgb(255, 213, 0);
+  color: black;
+}
+
+.operate-banner .controls .operate-buttons .end-button {
+  background-color: white;
+  color: black;
+}
+
+.operate-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operate-popup {
+  background: rgb(235, 235, 235);
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  position: relative;
+}
+
+.operate-popup p{
+  font-weight: 500;
+  
+}
+
+.operate-popup .operate-popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.operate-popup button {
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 10px 25px;
+  font-size: medium;
+}
+
+.operate-popup .close-button {
+  background: transparent;
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: large;
+}
+
+.operate-popup .confirm-button {
+  background: rgb(249, 191, 0);
+  color: black;
+}
+
+.operate-popup .cancel-button {
+  background: white;
+  color: black;
+  border: none;
+}
+
+.back-button{
+  color: rgb(94, 94, 94);
+  margin-top: 30px;
+  margin-left: 30px;
+  border: none;
+  padding-right: 2%;
+  padding-left: 2%;
+  font-size: 35px;
+  background-color: white;
+  border-radius: 20px;
+}

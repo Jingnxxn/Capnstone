@@ -1,0 +1,9 @@
+.operate-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-size: cover;
+    background: url('../../Assets/images/MapBackground.png') no-repeat center center;
+    background-position: center top;
+  }

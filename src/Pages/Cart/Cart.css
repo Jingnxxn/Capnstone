@@ -1,0 +1,253 @@
+
+
+.no-banner-cart-container{
+    overflow-y: auto;
+    position: absolute;
+    top: 2vh;
+    bottom: 9vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수직 방향으로 가운데 정렬 */
+}
+
+.bottom-icons-banner{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 11%;
+    text-align: center;
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+}
+
+.cart-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* 수직으로 아이템 배치 */
+  align-items: center; /* 가운데 정렬 */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  height: 75px;
+  background-color: #e1e1e1d4;
+  border-radius: 20px;
+  padding: 2%;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.cart-item img {
+    width: 70px;
+    height: 70px; 
+    border-radius: 20px;
+    margin-right: 10%;
+    object-fit: cover; /* 이미지가 박스에 맞도록 조정 */
+}
+
+.item-details {
+  margin-top: 3%;
+  min-width: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-details h4 {
+  margin-top: 20px;
+  font-weight: bold;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 텍스트가 넘치면 ...으로 표시 */
+}
+
+.item-details p{
+  margin: 0;
+  color: #666;
+  font-size: small;
+}
+
+.item-details h5 {
+  text-align: right;
+  margin-top: 3%;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+  border-radius: 25px;
+  
+}
+
+.quantity-controls button {
+  border: none;
+  cursor: pointer;
+  background-color: rgb(240, 240, 240);
+  font-size: small;
+  color:#666;
+  font-weight: bold;
+}
+
+.quantity-controls button:first-of-type{
+  border-radius: 25px 0 0 25px ;
+}
+.quantity-controls button:last-of-type{
+  border-radius: 0 25px 25px 0;
+}
+
+.quantity-controls span{
+  background-color: rgb(240, 240, 240);
+  font-size: small;
+}
+
+.remove-item {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  font-size: small;
+}
+
+.item-price{
+  position: absolute;
+  margin-top: 5%;
+  bottom: 1px;
+  right: 10px;
+  text-align: right;
+}
+
+
+  .total-price{
+    margin-left: 50%;
+  }
+  
+  .shopping-button {
+    width: 80%;
+    padding: 5%;
+    background-color: orange;
+    color: #1b1b1b;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 5%;
+  }
+/*팝업창*/
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: rgb(242, 242, 242);
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  width: 50%;
+  height: 30%;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup input {
+  width: 70%;
+  padding: 8%;
+  border: none;
+  border-radius: 25px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: #c4c4c4;
+  font-size: 16px; /* placeholder 글씨 크기 조절 */
+}
+.popup input::placeholder {
+  font-size: small;
+  color: #6b6b6b;
+}
+
+.popup button {
+  
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.popup button:first-of-type {
+  background: transparent;
+  color: black;
+  padding: 5%;
+  padding-top: 0;
+  margin-left: 93%;
+  transform: translateY(-40%);
+  font-size: small;
+}
+
+.popup button:last-of-type {
+  align-items: center;
+  background: rgb(249, 191, 0);
+  color: black;
+  padding: 15px 30px;
+  margin: 5px;
+  bottom: 0%;
+  transform: translateY(20%);
+  font-size: small;
+  border-radius: 20px;
+}
+
+
+/* 하단 아이콘 세트 */
+.bottom-icons {
+    display: flex;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+
+}
+
+.bottom-icon-container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    font-size: small;
+    border:none;
+    background-color: transparent;
+    color:#4b4b4b
+    
+}
+
+.bottom-icon-container img {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.bottom-icon-container img:hover{
+    background-color: #e7e7e7;
+    padding-bottom: 10px;
+}
